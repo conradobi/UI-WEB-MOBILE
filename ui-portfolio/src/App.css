@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+
+header {
+  margin: 30px 0;
+}
+.nav {
+  display: flex;
+  gap: 30px;
+  justify-content: end;
+}
+
+.nav .nav-item {
+  list-style: none;
+}
+
+.nav .nav-item .nav-links {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+
+/* Hero */
+
+.hero {
+  margin: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .hero-content .hero-content-title {
+  color: #21243d;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+.hero .hero-content {
+  width: 50%;
+}
+.hero .hero-content-img {
+  width: 50%;
+  text-align: center;
+}
+.hero .hero-content .hero-content-desc {
+  color: #21243d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 47px;
+}
+
+/* Recent Posts */
+.recent {
+  background: #edf7fa;
+  padding: 32px 0;
+}
+.recent .recent-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.recent .recent-top .recent-tltle {
+  color: #21243d;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+}
+.recent .recent-top .recent-link {
+  color: #00a8cc;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.recent-inner {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.recent-inner .recent-col {
+  background: #ffffff;
+  padding: 24px;
+}
+.recent-col-title {
+  color: #21243d;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.recent-meta {
+  display: flex;
+  gap: 30px;
+  color: #21243dx;
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.recent-col-desc {
+  color: #21243d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* featured */
+.featured {
+  padding: 50px 0;
+}
+.featured-work {
+  margin: 30px 0;
+  display: flex;
+  gap: 20px;
+}
+.featured-meta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 16px 0;
+}
+.featured-content-title {
+  color: #21243d;
+  font-size: 30px;
+  font-weight: 700;
+}
+.year {
+  padding: 3px 15px;
+  border-radius: 16px;
+  background: #142850;
+  color: #fff;
+  font-weight: 900;
+}
+.featured-content-desc {
+  color: #21243d;
+  font-family: Heebo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+}
+.category {
+  color: var(--Light, #8695a4);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer {
+  text-align: center;
+  margin: 48px;
+}
+.footer-icons {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 15px;
+  display: none;
+}
+.mobile-nav-item {
+  list-style: none;
+}
+.mobile-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  display: none;
+}
+/* Mobile Responsive */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* Your CSS styles for the specified range go here */
+  .desktop {
+    display: none;
+  }
+  .mobile-icon {
+    display: flex;
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 15px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .hero .hero-content {
+    width: 100%;
+  }
+  .hero .hero-content .hero-content-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .hero .hero-content .hero-content-desc {
+    font-size: 14px;
+  }
+  .hero .hero-content-img {
+    width: 80%;
+    height: auto;
+  }
+  .recent-inner {
+    flex-direction: column;
+  }
+  .recent .recent-top .recent-link {
+    display: none;
+  }
+  .recent .recent-top {
+    justify-content: center;
+  }
+  .recent-col-title {
+    font-size: 18px;
+  }
+  .recent-meta {
+    font-size: 12px;
+    margin: 16px 0;
+  }
+  .featured-work {
+    flex-direction: column;
+  }
+}
